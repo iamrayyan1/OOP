@@ -21,13 +21,13 @@ struct Student : public Register
   string email;
 };
 
-
-
-
-
 int main() 
 {
-  Student student[5];
+  int n;
+  cout << "Enter the number of students: ";
+  cin >> n;
+
+  Student students[n];
   for(int i = 0; i < 5; i++)
     {
       cout<< "Enter student id: ";
@@ -56,7 +56,5 @@ int main()
       cout<< "Course id: "<< student[i].courseId<< endl;
       cout<< "Course name: "<< student[i].courseName<< endl;
     }
-      
-  
-  
-}
+}  
+
