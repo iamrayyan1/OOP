@@ -1,28 +1,32 @@
 #include<iostream>
 using namespace std;
+
 int main() 
 {
     int num;
-    int count=0;
-    int flag =0;
-    cout<< "Enter a number: ";
-    cin>> num;
-    for(int i=2; i<=num; i++){
-        if(i!=num)
-        {
-            if(num%i == 0)
-            {
+    int flag = 0;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if(num <= 1) {
+        cout << "Not a Prime number";
+    }
+    else {
+        for(int i = 2; i <= num/2; i++) {
+            if(num % i == 0) {
                 flag = 1;
+                break;
             }
         }
-}
-    if(flag)
-        {
-            cout<<"Not a Prime number";
+
+        if(flag) {
+            cout << "Not a Prime number";
         }
-    else
-        {
+        else {
             cout << "Prime Number";
         }
-  return 0;
+    }
+
+    return 0;
 }
