@@ -46,12 +46,12 @@ public:
     this->allareas = allareas;
   }
 
-  display(Square square)
+  void display()
   {
     cout << "Square Details:" << endl;
     cout << "Side Length: " << sideLength << endl;
     cout << "Area: " << area << endl;
-    cout << "Total area: " << allareas << endl;
+    cout << "Total area: " << allareas << endl << endl;
   }
 
 };
@@ -65,11 +65,10 @@ int main()
   Square s3(11);
   
   s1.calculateArea();
-  s2.calculateArea();
-  s3.calculateArea();
-
   s1.display();
+  s2.calculateArea();
   s2.display();
+  s3.calculateArea();
   s3.display();
   return 0;
   
