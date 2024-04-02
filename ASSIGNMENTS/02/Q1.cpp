@@ -62,7 +62,7 @@ public:
 
 void performScan() 
 {
-    cout << "Performing SCAN..." << endl;
+    cout << "\nPerforming SCAN FOR " << getSecurityLevel() << endl;
     int i;
     if (getSecurityLevel() == "HIGH") 
     {
