@@ -1,2 +1,2 @@
 Q1:
-![image](https://github.com/iamrayyan1/OOP/assets/142688529/808b4649-4dcd-4733-adc4-86e662a29688)
+![image](https://github.com/iamrayyan1/OOP/assets/142688529/0fa4c800-1e39-4512-be1a-321575db525b)
