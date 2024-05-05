@@ -125,14 +125,17 @@ int main() {
 
   Matrix<int> *m5 = new IntMatrix(2, 2);
   *m5 = m1 + m2;
+  cout << "M1 + M2 = " << endl;
   m5->display();
 
   Matrix<double> *m6 = new DoubleMatrix(2, 2);
-  *m6 = m4 - m3;
+  *m6 = m4 - m3;  
+  cout << "M4 - M3 = " << endl;
   m6->display();
 
   Matrix<int> *m7 = new IntMatrix(2, 2);
   *m7 = m1 * m2;
+  cout << "M1 * M2 = " << endl;
   m7->display();
 
   delete m5;
